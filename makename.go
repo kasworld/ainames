@@ -19,5 +19,5 @@ import (
 func GetRandomName(rnd *rand.Rand) string {
 	lastname := LastNames[rnd.Intn(len(LastNames))]
 	firstname := FirstNames[rnd.Intn(len(FirstNames))]
-	return fmt.Sprintf("%s %s", lastname, firstname)
+	return fmt.Sprintf("%s %s", firstname, lastname)
 }
